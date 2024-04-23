@@ -1,21 +1,20 @@
-.body {
-  background-color: aliceblue;
-}
-.head{
+.head {
   background-color: white;
-  color: blue
-
+  color: blue;
 }
-.section{
+
+.section {
   display: flex;
 }
-.body{
-  background-color: rgb(14, 177, 241);
 
+.body {
+  background-color: rgb(14, 177, 241);
 }
-.form{
+
+.form {
   font-size: 25px;
 }
-.submit{
+
+.submit {
   font-size: 25px;
 }
