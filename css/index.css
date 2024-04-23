@@ -1,3 +1,9 @@
-.test {
-  background-color: aliceblue;
+#heading {
+  background-color: rgb(87, 75, 75);
+  color: blue;
+  text-align: center;
+  width: 300px;
+  margin-left: 30%;
+  margin-top: 5%;
+  padding: 20px;
 }
