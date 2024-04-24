@@ -1,3 +1,18 @@
-.test {
+html,
+body {
   background-color: aliceblue;
+}
+
+.headline-container {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: center;
+  color: rgb(99, 114, 11);
+}
+
+.headline-container-pos {
+  color: rgba(51, 119, 71, 0.933);
+
 }

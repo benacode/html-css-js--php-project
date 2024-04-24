@@ -1,0 +1,44 @@
+html,
+body {
+    background-color: aliceblue;
+    margin: 0% 20% 0% 20%;
+}
+
+.headline-container {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    color: rgb(12, 10, 41);
+}
+
+.headline-container-pos {
+    color: rgba(51, 119, 71, 0.933);
+
+}
+
+.headline-container-paragraph {
+
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 20;
+    line-height: 140%;
+    text-align: center;
+    color: black;
+}
+
+.menu {
+    width: 351px;
+    height: 184px;
+    border-radius: 8px;
+}
+
+.menu-list {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 137%;
+    text-align: center;
+    color: #3a4a42;
+}
