@@ -1,3 +1,51 @@
-.test {
+html,
+body {
   background-color: aliceblue;
+  margin: 0% 0.001% 0% 0.001%;
+}
+
+.headline-container {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: center;
+  color: #172b4d;
+}
+
+.headline-container-pos {
+  color: #34e23c;
+}
+
+.headline-container-paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #172b4d;
+}
+
+.headline-container-socialmedia {
+  text-align: center;
+  justify-content: space-around;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  width: 351px;
+  height: 184px;
+  border-radius: 8px;
+}
+
+.main-list {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 137%;
+  color: #3a4a42;
 }
