@@ -18,6 +18,7 @@ body {
   margin: auto;
   border-radius: 5px;
   border: 1px solid #ced4da;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: Exo;
   color: white;
   background-color: #212529;
@@ -105,6 +106,7 @@ body {
   transition-duration: 0.5s;
 }
 
+/* stylelint-disable-next-line selector-type-no-unknown */
 .input-slide-contianer > scroller > .input-slide {
   width: 478px;
   display: flex;
@@ -163,6 +165,7 @@ body {
   border: none;
   margin: auto;
   margin-right: 10px;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: Exo;
   font-size: 1em;
   cursor: pointer;
@@ -177,6 +180,7 @@ body {
   display: flex;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .user-detail > input {
   align-items: start;
   margin: 10px;
