@@ -55,3 +55,17 @@ body {
   right: 450px;
   color: #67798e;
 }
+
+.action-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #dfe1e6;
+  background-color: transparent;
+}
+
+.chevron {
+  background: url(./img/chevron.png) 50% 50% no-repeat;
+  width: 40px;
+  height: 40px;
+}
