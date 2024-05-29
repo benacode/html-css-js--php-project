@@ -1,5 +1,5 @@
 {
-  "name": "portifolio-microverese",
+  "name": "JS-demo",
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
   "main": "index.js",
@@ -8,15 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Benawi/Portifolio-Microverese.git"
+    "url": "git+https://github.com/Benawi/html-css-js-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Benawi/Portifolio-Microverese/issues"
-  },
-  "homepage": "https://github.com/Benawi/Portifolio-Microverese#readme",
+  "homepage": "",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
