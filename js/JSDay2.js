@@ -37,7 +37,5 @@ message('cs', 'cci');
 const str = 'AS\'s';
 console.log(str.toLowerCase());
 const sec = ['a', 'b', 'v'];
-const sec1 = [];
-sec1[0] = 'k';
 console.log(str.toString);
-sec1.sort();
+sec.sort();
