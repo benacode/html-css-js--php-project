@@ -34,7 +34,7 @@ message('cs', 'cci');
 // const arr = Object.values(person);
 // const json1 = JSON.stringify(person);
 // document.getElementById('id1').innerHTML = `${json1} `;
-const str = 'AS\'s';
+const str = 'BeNa\'s';
 console.log(str.toLowerCase());
 const sec = ['a', 'b', 'v'];
 console.log(str.toString);
