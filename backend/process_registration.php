@@ -14,7 +14,7 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 // Prepare and bind
 $stmt = $link->prepare("INSERT INTO users1 (username, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)");
-$stmt->bind_param("sssss", $user_name, $first_name, $last_name, $email, $hashed_password);
+$stmt->bind_param("sssss", $user_name, $first_name, $last_name, $email, $password);
 
 // Execute the statement
 if ($stmt->execute()) {
