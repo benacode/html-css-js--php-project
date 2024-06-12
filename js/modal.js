@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         url1='index.php';
     }
     else if(status ==="Deleted" || status==="Updated" ||status=== "Not" ){
-        $('#messageModalLabel').text("Deleted");
+        $('#messageModalLabel').text("Deleted12");
         url1='welcomepage.php';
 
         
