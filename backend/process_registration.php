@@ -35,16 +35,7 @@ $link->close();
     <meta charset="UTF-8">
     <title>Result</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font: 14px sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/shadowStyle.css">
 </head>
 <body>
     <!-- Modal -->

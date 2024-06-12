@@ -5,7 +5,7 @@ session_start();
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
+    header("location: welcomepage.php");
     exit;
 }
 
@@ -69,7 +69,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             header("location: Welcomepage.php");
                         } else{
                             // Password is not valid, display a generic error message
-                            $login_err = "Invalid username or password1.";
+                            $login_err = "Invalid username or password.";
                         }
                     }
                 } else{
@@ -96,23 +96,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-         body {
-            font: 14px sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .wrapper {
-            width: 360px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            background-color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/shadowStyle.css">
 </head>
 <body>
 <div class="wrapper">

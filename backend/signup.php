@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/registrationStyle.css">
+    <link rel="stylesheet" href="../css/registrationStyle.css ?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script type="text/javascript" src="../Js/registrationJs"></script>
+    
 </head>
 <body>
     
@@ -42,7 +42,7 @@
                     <li>Please enter valid email in the format "example@example.com".</li>
                     <li>we value your privacy and will never use your email for any unauthorized purposes.</li>
                     <li>Please don't use email that belong to someone else.</li>
-                    <li>Please don't use email that includes personal information.</li>
+                
                 </ul>
                 <input type="email" name="email" class="email" placeholder="Email">     
                 <button class="button-nex" onclick="NextSlide(2)">Next</button>
@@ -56,7 +56,7 @@
                     <li>Do not use personal information.</li>
                 </ul>
                 <input type="password" name="password" class="password" placeholder="Password">
-                <input type="password" name="confirm-password" class="confirm-password" placeholder="Confirm Your Password">
+                <input type="password" name="confirm_password" class="confirm-password" placeholder="Confirm Your Password">
                 <button class="button-nex" onclick="NextSlide(3)">Next</button>
             </div>
             <div class="input-slide finish-slide">
@@ -72,7 +72,8 @@
         </scroller> 
         </div>
       <button class="GoBack" onclick="GoBack()"><i class="fa-solid fa-arrow-left"></i></button> 
+      <p>Already have an account? <a href="index.php">Login here</a>.</p>
     </form>
-
+    <script type="text/javascript" src="../Js/registration.js"></script>
 </body>
 </html>

@@ -7,10 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let url1;
     if (status === "success") {
         $('#messageModalLabel').text("Success");
-        url1='index.php'
+        url1='index.php';
+    }
+    else if(status ==="Deleted" || status==="Updated" ||status=== "Not" ){
+        $('#messageModalLabel').text("Deleted");
+        url1='welcomepage.php';
+
+        
     } else {
         $('#messageModalLabel').text("Error");
-        url1='signup.php'
+        url1='signup.php';
     }
     $('#messageModal').modal('show');
     
