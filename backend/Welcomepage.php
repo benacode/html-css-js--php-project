@@ -24,9 +24,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <p>
     <a href="resetpassword.php" class="btn btn-warning">Reset Your Password</a>
     <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+    <a href="./oop/SearchPagewithAjax.php" class="btn btn-success ml-3">Search with AJAX</a>
 </p>
 <?php
-include 'SelectUser.php'
+include 'SelectUser.php';
+include './oop/searchPage.php'
 ?>
+
 </body>
 </html>
