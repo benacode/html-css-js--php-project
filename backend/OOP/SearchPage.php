@@ -22,8 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Search User</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="search_username" class="form-control" required>
+                <input type="text" name="search_username" placeholder="User Name" class="form-control" required>
             </div>
             <input type="submit" name="search" class="btn btn-primary" value="Search">
         </form>
