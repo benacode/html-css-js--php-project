@@ -45,11 +45,11 @@ if ($result->num_rows > 0) {
                 <td>
                        <form method='post' action='update.php' style='display:inline;'>
                         <input type='hidden' name='id' value='" . $row["id"] . "'>
-                        <input type='submit' value='Update'>
+                        <input type='submit' value='Update' class='btn-success'>
                     </form>
                     <form method='post' action='delete.php' style='display:inline;'>
                         <input type='hidden' name='id' value='" . $row["id"] . "'>
-                        <input type='submit' value='Delete'>
+                        <input type='submit' value='Delete' class='btn-danger'>
                     </form>
 
                 </td>
