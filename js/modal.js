@@ -9,11 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#messageModalLabel').text("Success");
         url1='index.php';
     }
-    else if(status ==="Deleted" || status==="Updated" ||status=== "Not" ){
-        $('#messageModalLabel').text("Deleted12");
+    else if(status ==="Deleted" ||status=== "Not" ){
+        $('#messageModalLabel').text("Deleted");
         url1='welcomepage.php';
 
-        
+    }
+    else if(status==="Updated" ||status=== "Not" ){
+            $('#messageModalLabel').text("Updated");
+            url1='welcomepage.php';
+    
+            
     } else {
         $('#messageModalLabel').text("Error");
         url1='signup.php';
