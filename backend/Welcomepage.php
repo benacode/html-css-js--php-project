@@ -20,15 +20,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </style>
 </head>
 <body>
+<div class="user-photo" style="background-color: green;">
 <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+
 <p>
     <a href="resetpassword.php" class="btn btn-warning">Reset Your Password</a>
     <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
     <a href="./oop/SearchPagewithAjax.php" class="btn btn-success ml-3">Search with AJAX</a>
 </p>
+</div>
 <?php
+include 'profilePhoto.php';
 include 'SelectUser.php';
-include './oop/searchPage.php'
+include './oop/searchPage.php';
 ?>
 
 </body>

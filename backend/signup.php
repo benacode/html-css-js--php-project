@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <form class="container" action="./process_registration.php" method="post">
+    <form class="container" action="./process_registration.php" method="post" enctype="multipart/form-data">
         <h2 class="heading">Sign Up</h2>
         <div class="steps-container">
             <hr>
@@ -18,6 +18,7 @@
             <div class="steps"><i class="fa-solid fa-user"></i></div>
             <div class="steps"><i class="fa-solid fa-envelope"></i></div>
             <div class="steps"><i class="fa-solid fa-key"></i></div>
+            <div class="steps"><i class="fa-solid fa-user"></i></div>
             <div class="steps"><i class="fa-solid fa-trophy"></i></div>
         </div>
     
@@ -58,6 +59,17 @@
                 <input type="password" name="password" class="password" placeholder="Password">
                 <input type="password" name="confirm_password" class="confirm-password" placeholder="Confirm Your Password">
                 <button class="button-nex" onclick="NextSlide(3)">Next</button>
+            </div>
+            <div class="input-slide password-slide">
+                <h3>Profile Photo</h3>
+                <p><i>Please upload your profile photo</i></p>
+                <ul class="rules">
+                    <li>Profile photo</li>
+                    <li>Avoid using photo size greater than 500000.</li>
+                    <li>Do not upload again.</li>
+                </ul>
+                  <input type="file" name="photo" id="photo" accept="image/*" required><br><br>
+                <button class="button-nex" onclick="NextSlide(4)">Next</button>
             </div>
             <div class="input-slide finish-slide">
                 <h3>Congratulations!</h3>

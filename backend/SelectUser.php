@@ -20,9 +20,8 @@ if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] !== true){
 
 
 <?php
-require"configfile.php";
 
-$sql = "SELECT id, username,password, firstname,lastname FROM users1";
+$sql = "SELECT id, username,password, firstname,lastname,created_at FROM users1";
 $result = $link ->query($sql);
 
 if ($result->num_rows > 0) {
@@ -33,6 +32,7 @@ if ($result->num_rows > 0) {
                 <th>Password</th>
                 <th>First Name</th>
                 <th>Last Name</th>
+                <th>Created at</th>
                 <th>Actions</th>
             </tr>";
     while($row = $result->fetch_assoc()) {
@@ -42,6 +42,7 @@ if ($result->num_rows > 0) {
                 <td>" . $row["password"] . "</td>
                 <td>" . $row["firstname"] . "</td>
                 <td>" . $row["lastname"] . "</td>
+                <td>" . $row["created_at"] ."</td>
                 <td>
                        <form method='post' action='update.php' style='display:inline;'>
                         <input type='hidden' name='id' value='" . $row["id"] . "'>
