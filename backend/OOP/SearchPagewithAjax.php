@@ -17,16 +17,23 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <style>
         body{ font: 14px sans-serif; text-align: center; }
+        .user-photo {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
     </style>
     </head>
 <body>
+<div class="user-photo" style="background-color: green;">
 <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
 <p>
     <a href="../resetpassword.php" class="btn btn-warning">Reset Your Password</a>
     <a href="../logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
     <a href="../welcomepage.php" class="btn btn-success ml-3">Back to Home</a>
 </p>
-
+</div>
     <div class="container">
         <h2>Search User</h2>
         <form id="searchForm">
